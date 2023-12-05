@@ -1,0 +1,21 @@
+INSERT INTO Horrormovie (id, movie_name, producer, annee_de_sortie, type_de_film)
+VALUES
+(1, 'L\'Exorciste', 'William Friedkin', 1973, 'horreur'),
+(2, 'Massacre à la tronçonneuse', 'Tobe Hooper', 1974, 'horreur'),
+(3, 'Jaws', 'Steven Spielberg', 1975, 'horreur'),
+(4, 'Carrie', 'Brian De Palma', 1976, 'horreur'),
+(5, 'Halloween', 'John Carpenter', 1978, 'horreur'),
+(6, 'Alien, le huitième passager', 'Ridley Scott', 1979, 'horreur'),
+(7, 'Shining', 'Stanley Kubrick', 1980, 'horreur'),
+(8, 'Evil Dead', 'Sam Raimi', 1981, 'horreur'),
+(9, 'The Thing', 'John Carpenter', 1982, 'horreur'),
+(10, 'A Nightmare on Elm Street', 'Wes Craven', 1984, 'horreur'),
+(11, 'Gremlins', 'Joe Dante', 1984, 'horreur'),
+(12, 'The Goonies', 'Richard Donner', 1985, 'horreur'),
+(13, 'The Fly', 'David Cronenberg', 1986, 'horreur'),
+(14, 'The Lost Boys', 'Joel Schumacher', 1987, 'horreur'),
+(15, 'Hellraiser', 'Clive Barker', 1987, 'horreur'),
+(16, 'Beetlejuice', 'Tim Burton', 1988, 'horreur'),
+(18, 'Pet Sematary', 'Mary Lambert', 1989, 'horreur'),
+(19, 'The Abyss', 'James Cameron', 1989, 'horreur'),
+(31, 'Le Cercle des poètes disparus', 'Peter Weir', 1989, 'horreur');
