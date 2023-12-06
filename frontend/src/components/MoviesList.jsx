@@ -5,22 +5,22 @@ function Movies() {
   const [postMovie, setPostMovie] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/movies").then((data) => {
-      console.log(data);
-      setPostMovie(data?.data);
+    axios.get("http://localhost:5000/api/movies").then((response) => {
+      console.log(response.data);
+      setPostMovie(response.data);
     });
   }, []);
 
   return (
     <div>
-      Movies
-      {postMovie.map((item, i) => {
-        return (
-          <div key={i}>
-            <p>{item?.title}{item?.release_year}</p>
-          </div>
-        );
-      })}
+      <h2>Movies</h2>
+      {postMovie.map((item, i) => (
+        <div key={i}>
+          <p>{item.title}</p>
+          <p>{item.release_year}</p>
+          {item.image_url && <img src={item.image_url} alt={item.title} />}
+        </div>
+      ))}
     </div>
   );
 }
