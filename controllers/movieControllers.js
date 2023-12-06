@@ -2,7 +2,7 @@ const database = require("../database");
 
 const getMovies = (req,res) => {
     database
-    .query("select*from movie")
+    .query("select * from movie")
     .then (([movies]) =>  {
         res.json(movies);
     })
