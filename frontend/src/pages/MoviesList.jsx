@@ -15,8 +15,8 @@ function Movies() {
   return (
     <div>
       <img src={Logo} alt="logo" />
-      {postMovie.map((item, i) => (
-        <div key={i}>
+      {postMovie.map((item, films) => (
+        <div key={films}>
           <p>{item.title}</p>
           <p>{item.release_year}</p>
           {item.image_url && <img src={item.image_url} alt={item.title} />}
