@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Logo from '../assets/Logo.gif'
 
 function Movies() {
   const [postMovie, setPostMovie] = useState([]);
@@ -13,7 +14,7 @@ function Movies() {
 
   return (
     <div>
-      <h2>Movies</h2>
+      <img src={Logo} alt="logo" />
       {postMovie.map((item, i) => (
         <div key={i}>
           <p>{item.title}</p>
