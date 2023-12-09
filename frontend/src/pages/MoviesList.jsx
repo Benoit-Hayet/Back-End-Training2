@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Logo from '../assets/Logo.gif'
 import Navigation from "../components/Navigation";
+import Sidebar from "../components/SideBar";
 
 function Movies() {
   const [postMovie, setPostMovie] = useState([]);
@@ -15,8 +15,8 @@ function Movies() {
 
   return (
     <div>
-      <img src={Logo} alt="logo" />
       <Navigation/>
+      <Sidebar/>
       {postMovie.map((item, films) => (
         <div key={films}>
           <p>{item.title}</p>
