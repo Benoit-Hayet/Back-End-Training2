@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Navigation from "../components/Navigation";
 import Sidebar from "../components/SideBar";
+import "../styles/Movies.css"; // Import your CSS styles
 
 function Movies() {
   const [postMovie, setPostMovie] = useState([]);
@@ -15,17 +16,20 @@ function Movies() {
 
   return (
     <div>
-      <Navigation/>
-      <Sidebar/>
-      {postMovie.map((item, films) => (
-        <div key={films}>
-          <p>{item.title}</p>
-          <p>{item.release_year}</p>
-          {item.image_url && <img src={item.image_url} alt={item.title} />}
-        </div>
-      ))}
+      <Navigation />
+      <Sidebar />
+      <div className="movies-container">
+        {postMovie.map((item) => (
+          <div key={item.id} className="movie-card">
+            <h2>{item.title}</h2>
+            <p>{item.release_year}</p>
+            {item.image_url && <img src={item.image_url} alt={item.title} />}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
 
 export default Movies;
+

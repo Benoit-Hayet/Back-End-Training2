@@ -1,7 +1,6 @@
-
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "../styles/sidebar.css"; // Import your CSS styles
+import "../styles/sidebar.css";
 
 const Sidebar = () => {
   return (
@@ -18,7 +17,6 @@ Connexion
             About Us
           </NavLink>
         </li>
-        {/* Add more links as needed */}
       </ul>
     </div>
   );
