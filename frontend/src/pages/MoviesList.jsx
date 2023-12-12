@@ -16,7 +16,10 @@ function Movies() {
 
   return (
     <div>
+      <header>
       <Navigation />
+      </header>
+      <body>
       <Sidebar />
       <div className="movies-container">
         {postMovie.map((item) => (
@@ -27,6 +30,7 @@ function Movies() {
           </div>
         ))}
       </div>
+      </body>
     </div>
   );
 }

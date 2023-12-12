@@ -34,12 +34,12 @@ a {
 
 
 h2 {
-
+  
   color: whitesmoke;
 }
 
 p {
-  display: block;
+  display: flex;
   color: whitesmoke;
 }
 
