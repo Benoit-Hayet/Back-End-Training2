@@ -21,3 +21,5 @@ Front-End :
 
 Pour visualiser le projet, n'oubliez pas d'installer les dépendances avec npm install dans la racine ainsi que dans le dossier frontend.
 
+Executer npm run dev dans la racine puis dans le dossier front end.
+
