@@ -1,11 +1,10 @@
 import React from 'react';
-import { useState } from 'react';
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
-import Movies from './pages/MoviesList';
+import Movies from './pages/Movies';
 import Home from './pages/Home';
 
 function App() {
-  const [count, setCount] = useState(0);
+
 
   return (
     <div>

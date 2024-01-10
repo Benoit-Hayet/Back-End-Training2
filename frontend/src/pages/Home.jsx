@@ -1,13 +1,13 @@
 import React from "react";
 import Navigation from "../components/Navigation";
-import Sidebar from "../components/SideBar";
+import Carousel from "../components/Carousel";
 
 
 const Home = () => {
   return (
     <div>
       <Navigation />
-      <Sidebar />
+      <Carousel/>
     
         <h2>Fan de film d'horreur ?</h2>
         <p>

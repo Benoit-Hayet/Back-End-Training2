@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Navigation from "../components/Navigation";
-import Sidebar from "../components/SideBar";
 import "../styles/Movies.css"; // Import your CSS styles
 
 function Movies() {
@@ -16,11 +15,7 @@ function Movies() {
 
   return (
     <div>
-      <header>
       <Navigation />
-      </header>
-      <body>
-      <Sidebar />
       <div className="movies-container">
         {postMovie.map((item) => (
           <div key={item.id} className="movie-card">
@@ -30,10 +25,8 @@ function Movies() {
           </div>
         ))}
       </div>
-      </body>
     </div>
   );
 }
 
 export default Movies;
-
