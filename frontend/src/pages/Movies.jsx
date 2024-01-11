@@ -1,9 +1,17 @@
 import React, { useEffect, useState } from "react";
+import {
+  MDBCard,
+  MDBCardBody,
+  MDBCardTitle,
+  MDBCardText,
+  MDBCardImage,
+  MDBBtn,
+} from "mdb-react-ui-kit";
 import axios from "axios";
 import Navigation from "../components/Navigation";
 import "../styles/Movies.css"; // Import your CSS styles
 
-function Movies() {
+export default function Movies() {
   const [postMovie, setPostMovie] = useState([]);
 
   useEffect(() => {
@@ -14,19 +22,30 @@ function Movies() {
   }, []);
 
   return (
-    <div>
+    <div className="movies-container">
       <Navigation />
-      <div className="movies-container">
-        {postMovie.map((item) => (
-          <div key={item.id} className="movie-card">
-            <h2>{item.title}</h2>
-            <p>{item.release_year}</p>
-            {item.image_url && <img src={item.image_url} alt={item.title} />}
-          </div>
-        ))}
-      </div>
+      {postMovie.map((item) => (
+        <MDBCard
+          key={item.id}
+          className="movie-card"
+          style={{
+            backgroundColor: "black",
+            color: "white",
+            boxShadow: "0 0 1px 2px white",
+            margin: "5px",
+          }}
+        >
+          <MDBCardImage src={item.image_url} position="top" alt={item.title} />
+          <MDBCardBody>
+            <MDBCardTitle>{item.title}</MDBCardTitle>
+            <MDBCardTitle>{item.release_year}</MDBCardTitle>
+            <MDBCardText></MDBCardText>
+            <MDBBtn href="#" style={{ backgroundColor: "gray" }}>
+              More
+            </MDBBtn>
+          </MDBCardBody>
+        </MDBCard>
+      ))}
     </div>
   );
 }
-
-export default Movies;

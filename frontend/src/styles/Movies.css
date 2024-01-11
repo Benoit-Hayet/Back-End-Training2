@@ -1,35 +1,13 @@
 .movies-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 80px;
-  }
-  
-  .movie-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 16px;
-    margin: 16px;
-    width: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .movie-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .movie-card img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 10px;
-    border-radius: 4px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
 
-  
-  p {
-        display: flex;
-        justify-content: space-around;
-  }
+.movie-card {
+  width: 300px; /* Ajustez la largeur des cartes selon vos besoins */
+  margin-bottom: 20px;
+}
